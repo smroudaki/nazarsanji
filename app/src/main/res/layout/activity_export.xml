@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:paddingHorizontal="10dp"
+    >
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/kefalatExportBtn"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="5dp"
+            android:layout_marginHorizontal="5dp"
+            android:text="خروجی : معافیت کفالت"
+            android:textSize="14sp"
+            app:cornerRadius="5dp"
+            app:backgroundTint="@color/secondary"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/pezeshkiBadviExportBtn"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="5dp"
+            android:layout_marginHorizontal="5dp"
+            android:text="خروجی : معافیت پزشکی (شورا بدوی)"
+            android:textSize="14sp"
+            app:cornerRadius="5dp"
+            app:backgroundTint="@color/secondary"
+            />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/pezeshkiAwliExportBtn"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="5dp"
+            android:layout_marginHorizontal="5dp"
+            android:text="خروجی : معافیت پزشکی (شورا عالی)"
+            android:textSize="14sp"
+            app:cornerRadius="5dp"
+            app:backgroundTint="@color/secondary"
+            />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/gateExportBtn"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="5dp"
+            android:layout_marginHorizontal="5dp"
+            android:text="خروجی : قرارگاه و پشتیبانی - گیت ورودی"
+            android:textSize="14sp"
+            app:cornerRadius="5dp"
+            app:backgroundTint="@color/secondary"
+            />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/ehzarExportBtn"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="5dp"
+            android:layout_marginHorizontal="5dp"
+            android:text="خروجی : معاونت احضار و اعزام"
+            android:textSize="14sp"
+            app:cornerRadius="5dp"
+            app:backgroundTint="@color/secondary"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/ehtiatExportBtn"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="5dp"
+            android:layout_marginHorizontal="5dp"
+            android:text="خروجی : معاونت احتیاط و ذخیره"
+            android:textSize="14sp"
+            app:cornerRadius="5dp"
+            app:backgroundTint="@color/secondary"
+            />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/amaliatExportBtn"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="5dp"
+            android:layout_marginHorizontal="5dp"
+            android:text="خروجی : مرکز عملیات"
+            android:textSize="14sp"
+            app:cornerRadius="5dp"
+            app:backgroundTint="@color/secondary"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/mashmoolanExportBtn"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="5dp"
+            android:layout_marginHorizontal="5dp"
+            android:text="خروجی : مشمولان"
+            android:textSize="14sp"
+            app:cornerRadius="5dp"
+            app:backgroundTint="@color/secondary"
+            />
+
+</LinearLayout>

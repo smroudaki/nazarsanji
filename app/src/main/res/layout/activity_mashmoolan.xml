@@ -1,0 +1,754 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:paddingHorizontal="10dp"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layoutDirection="rtl"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1_جنسیت"
+            android:textSize="18sp"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/radioGroup_01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioGroup_01_01"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="مرد" />
+
+            <RadioButton
+                android:id="@+id/radioGroup_01_02"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="زن" />
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#e5e7eb"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="5dp"
+            android:text="2_سن"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/radioGroup_02"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioGroup_02_01"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="18-20" />
+
+                <RadioButton
+                    android:id="@+id/radioGroup_02_02"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="20-24" />
+
+                <RadioButton
+                    android:id="@+id/radioGroup_02_03"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="24-34" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioGroup_02_04"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="34-40" />
+
+                <RadioButton
+                    android:id="@+id/radioGroup_02_05"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="40-50" />
+
+                <RadioButton
+                    android:id="@+id/radioGroup_02_06"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="50 به بالا" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#e5e7eb"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="5dp"
+            android:text="3_میزان تحصیلات"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/radioGroup_03"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioGroup_03_01"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="زیر دیپلم" />
+
+                <RadioButton
+                    android:id="@+id/radioGroup_03_02"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="دیپلم" />
+
+                <RadioButton
+                    android:id="@+id/radioGroup_03_03"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="کاردانی" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioGroup_03_04"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="کارشناسی" />
+
+                <RadioButton
+                    android:id="@+id/radioGroup_03_05"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="کارشناس ارشد" />
+
+                <RadioButton
+                    android:id="@+id/radioGroup_03_06"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="دکترا" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioGroup_03_07"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="سایر" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#e5e7eb"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="5dp"
+            android:text="4_شهر محل سکونت"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/radioGroup_04"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioGroup_04_01"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="تهران" />
+
+            <RadioButton
+                android:id="@+id/radioGroup_04_02"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="سایر استان‌ها" />
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#e5e7eb"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="5dp"
+            android:text="5_تعداد دفعات مراجعه به سازمان"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/radioGroup_05"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioGroup_05_01"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="1 بار" />
+
+            <RadioButton
+                android:id="@+id/radioGroup_05_02"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="2 بار" />
+
+            <RadioButton
+                android:id="@+id/radioGroup_05_03"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="3 بار و بیشتر" />
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#e5e7eb"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="5dp"
+            android:text="6_جهت اطلاع از آخرین قوانین و مقررات وظیفه عمومی، به کدام روش‌های زیر مراجعه میکنید"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/radioGroup_06"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radioGroup_06_01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="تلفن گوبا 096480" />
+
+            <RadioButton
+                android:id="@+id/radioGroup_06_02"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="سامانه پیامکی 110206010" />
+
+            <RadioButton
+                android:id="@+id/radioGroup_06_03"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="پایگاه اطلاع‌رسانی vazifeh.police.ir" />
+
+            <RadioButton
+                android:id="@+id/radioGroup_06_04"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="مراجعه حضوری به ادارات وظیفه عمومی" />
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#e5e7eb"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="5dp"
+            android:text="7_ نحوه رفتار و پاسخگویی کارشناس پرونده را چگونه ارزیابی می کنید"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/radioGroup_07"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radioGroup_07_01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="عالی" />
+
+            <RadioButton
+                android:id="@+id/radioGroup_07_02"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="خوب" />
+
+            <RadioButton
+                android:id="@+id/radioGroup_07_03"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="متوسط" />
+
+            <RadioButton
+                android:id="@+id/radioGroup_07_04"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ضعیف " />
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#e5e7eb"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="5dp"
+            android:text="8_ تسلط کارشناس پرونده به موضوع پرونده چگونه بود."
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/radioGroup_08"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radioGroup_08_01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="عالی" />
+
+            <RadioButton
+                android:id="@+id/radioGroup_08_02"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="خوب" />
+
+            <RadioButton
+                android:id="@+id/radioGroup_08_03"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="متوسط" />
+
+            <RadioButton
+                android:id="@+id/radioGroup_08_04"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ضعیف " />
+        </LinearLayout>
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#e5e7eb"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="5dp"
+            android:text="9_ در زمان مراجعه کارشناسان و مسئولین باجه ها در محل کار خود حضور داشتند؟"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/radioGroup_09"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radioGroup_09_01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="بله" />
+
+            <RadioButton
+                android:id="@+id/radioGroup_09_02"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="خیر" />
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#e5e7eb"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="5dp"
+            android:text="10_  درخواست شما مربوط به کدام نوع از معافیت می باشد ."
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/radioGroup_10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radioGroup_10_01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="معافیت پزشکی " />
+
+            <RadioButton
+                android:id="@+id/radioGroup_10_02"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="معافیت کفالت " />
+
+            <RadioButton
+                android:id="@+id/radioGroup_10_03"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="معافیت تحصیلی" />
+
+            <RadioButton
+                android:id="@+id/radioGroup_10_04"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="معافیت موارد خاص" />
+
+            <RadioButton
+                android:id="@+id/radioGroup_10_05"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="درخواست خروج از کشور" />
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#e5e7eb"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="5dp"
+            android:text="11_در صورتی که ساکن خارج از کشور هستید در چه حوزه ای درخواست دارید؟"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/radioGroup_11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radioGroup_11_01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="معافیت پزشکی خارج از کشور" />
+
+            <RadioButton
+                android:id="@+id/radioGroup_11_02"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="معافیت کفالت خارج از کشور" />
+
+            <RadioButton
+                android:id="@+id/radioGroup_11_03"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="معافیت تحصیلی خارج از کشور" />
+
+            <RadioButton
+                android:id="@+id/radioGroup_11_04"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" تردد غایبن" />
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#e5e7eb"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="5dp"
+            android:text="12. مدت زمان انتظار جهت پاسخگویی کارشناس پرونده"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/radioGroup_12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radioGroup_12_01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="15 دقیقه" />
+
+            <RadioButton
+                android:id="@+id/radioGroup_12_02"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="30 دقیقه" />
+
+            <RadioButton
+                android:id="@+id/radioGroup_12_03"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1 ساعت" />
+
+            <RadioButton
+                android:id="@+id/radioGroup_12_04"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ببش از 1 ساعت" />
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#e5e7eb"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="5dp"
+            android:text="13.علت مراجعه حضوری به معاونت مشمولان و امور معافیت ها چه بوده است."
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/radioGroup_13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radioGroup_13_01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="عدم وجود اختیارات لازم" />
+
+            <RadioButton
+                android:id="@+id/radioGroup_13_02"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="عدم تسلط کافی کارشناس به موضوع پرونده" />
+
+            <RadioButton
+                android:id="@+id/radioGroup_13_03"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="عدم پیش بینی راه حل های غیر حضوری" />
+
+            <RadioButton
+                android:id="@+id/radioGroup_13_04"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="وجود اشکالات سیستمی" />
+            <RadioButton
+                android:id="@+id/radioGroup_13_05"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="مراجعه به علت درخواست شخصی" />
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#e5e7eb"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginHorizontal="5dp"
+                android:text="نام و نام خانوادگی"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <EditText
+                android:id="@+id/name"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:inputType="text"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginHorizontal="5dp"
+                android:text="شماره تلفن"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <EditText
+                android:id="@+id/phoneNumber"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginVertical="10dp"
+                android:inputType="text"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginHorizontal="5dp"
+                android:text="کد ملی"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <EditText
+                android:id="@+id/nationalCode"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginVertical="10dp"
+                android:inputType="text"/>
+
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/submitBtn"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginTop="10dp"
+            android:text="ثبت"
+            android:textSize="14sp"
+            app:cornerRadius="5dp"
+            app:strokeColor="@color/main" />
+
+
+    </LinearLayout>
+
+</ScrollView>
